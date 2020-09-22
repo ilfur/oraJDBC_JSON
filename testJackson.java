@@ -39,7 +39,7 @@ public class testJackson {
                 //String url = "jdbc:oracle:thin:@repodb_tp?TNS_ADMIN=D:/Projects/json_jdbc/Wallet_RepoDB/";
                 String url = "jdbc:oracle:thin:@//130.61.214.22/json.net1.marcelsservices.oraclevcn.com";
                 //Class.forName("oracle.jdbc.OracleDriver");
-                con = DriverManager.getConnection(url, "javasamples", "BrunhildeZ32##");
+                con = DriverManager.getConnection(url, "username", "password");
 
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT data FROM emp_json");
